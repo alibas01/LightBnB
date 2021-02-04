@@ -53,7 +53,7 @@ const getUserWithEmail = function(email) {
     if(!user.rows) {
       return null;
     } else {
-      return user.rows;
+      return user.rows[0];
     }
   })
   .catch(err => console.error('query error', err.stack));
@@ -75,7 +75,7 @@ const getUserWithId = function(id) {
     if(!user.rows) {
       return null;
     } else {
-      return user.rows;
+      return user.rows[0];
     }
   })
   .catch(err => console.error('query error', err.stack));
