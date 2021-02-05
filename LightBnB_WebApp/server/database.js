@@ -151,7 +151,7 @@ const getAllProperties = function(options, limit = 10) {
     `;
   
     // 5
-    console.log(queryString, queryParams);
+    //console.log(queryString, queryParams);
   
     // 6
     return pool.query(queryString, queryParams)
@@ -282,7 +282,7 @@ const addProperty = function(property) {
   `;
 
   // 5
-  console.log(queryString, queryParams);
+  //console.log(queryString, queryParams);
 
   // 6
   return pool.query(queryString, queryParams)
